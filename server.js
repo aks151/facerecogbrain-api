@@ -9,7 +9,6 @@ import knex from 'knex';
     client: 'pg',
     connection: {
       host : '127.0.0.1',
-      port : process.env.PORT,
       user : 'postgres',
       password : 'ayush1811',
       database : 'smartbrain'
