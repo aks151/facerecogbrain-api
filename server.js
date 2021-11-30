@@ -8,10 +8,8 @@ import knex from 'knex';
  const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-colorful-51910',
-      user : 'postgres',
-      password : 'ayush1811',
-      database : 'smartbrain'
+      host : process.env.DATABASE_URL,
+      ssl: true,
     }
   });
 
